@@ -1,16 +1,17 @@
+//Diaporama d'image :
 var slideIndex = 0;
-showSlides();
+var slideWrapper = document.querySelector('.slide-wrapper');
 
-function showSlides() 
-{
-    var i;
-    var slides = document.getElementsByClassName("fade");
-    for (i = 0; i < slides.length; i++) 
-    {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 5000);
+function moveSlides() {
+    slideWrapper.style.transform = "translateX(-" + slideIndex * 100 + "%)";
 }
+
+function autoSlide() {
+    slideIndex++;
+    if (slideIndex >= slideWrapper.children.length) {
+        slideIndex = 0;
+    }
+    moveSlides();
+}
+
+setInterval(autoSlide, 5000);
