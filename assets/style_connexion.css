@@ -64,6 +64,7 @@ display: flex;
 }
 
 #message{
+	text-shadow: 10px 5px 3px darkblue;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -79,6 +80,7 @@ display: flex;
 }
 
 #connexion legend{
+	text-shadow: 10px 5px 3px darkblue;
 	text-align: center;
 	text-decoration: bold;
 	font-size: 25px;s
@@ -86,11 +88,13 @@ display: flex;
 
 
 #conteneur_label_input label{
+	text-shadow: 10px 5px 3px darkblue;
 	display: block;
 	padding: 5px;
 }
 
 #conteneur_label_input input{
+	box-shadow: 0.65vw 0.71vh 2.84vh darkblue;
 	border: 0px;
 	border-radius: 1vh;
 	padding: 5px;
