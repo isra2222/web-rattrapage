@@ -1,0 +1,87 @@
+#logo{
+	height: 5%;
+	width: 5%;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    color: #004aad;
+    font-weight: bold;
+    margin-top: 8.2vh;
+    margin-left: -8px;
+    margin-right: -8px;  
+    margin-bottom: -8px;
+    padding: 5px;
+}
+
+.bandeau{
+	background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+button{
+	box-shadow: 10px 5px 20px darkblue;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	background-color: #004aad;
+}
+
+#conteneur_titre{
+	padding: 10px;
+}
+
+#titre{
+	color: white;
+	text-align: center;
+}
+
+#change_mdp{
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 70px;
+    padding: 10px;
+    width: 500px;
+}
+
+#change_mdp label{
+	display: block;
+	padding: 5px;
+}
+
+#change_mdp input{
+	width: 20vw;
+	margin: 0 auto;
+	text-align: center;
+	border: 0px;
+	border-radius: 1vh;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+#conteneur_bouton{
+	margin-top: 20px;
+}
+
+#btn{
+	border-radius: 1vw;
+	padding: 10px;
+	margin: 10px;
+	width: 20vw;
+	border: 0px;
+}
+
+.conteneur_label_input{
+	margin-bottom: 30px;
+}
