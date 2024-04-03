@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require 'connexion_bdd/creation_connexion.php';
 
@@ -20,7 +21,9 @@ if (!$resultat) {
 $motDePasseHache = $resultat['motDePasse'];
 
 if (password_verify($mot_de_passe, $motDePasseHache)) {
-    header("Location: Accueil.html");
+    $_SESSION['nom_utilisateur'] = $nom_utilisateur;
+
+    header("Location: Accueil.php");
     exit;
 } else {
     header("Location: Connexion.html");

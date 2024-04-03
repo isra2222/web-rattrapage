@@ -9,9 +9,7 @@
     </head>
     <body>
         <header>
-            <nav class="bandeau">
-                <img src="Image/logo.png" id="logo">
-            </nav>
+            <?php include 'header.php'; ?>
         </header>
 
         <div id="tableau">
@@ -192,9 +190,9 @@
 
             <div class="espace">
 
-                <input type="date" id="stage" name="date-stage" value="05-04-2024" min="01-01-2024" max="31-12-2034" />
+                <input type="date" id="stage" name="date-stage" value="2024-01-01" min="2024-01-01" max="2034-12-31" />
 
-                <input type="date" id="stage" name="date-stage" value="05-04-2024" min="01-01-2024" max="31-12-2034" />
+                <input type="date" id="stage" name="date-stage" value="2024-01-01" min="2024-01-01" max="2034-12-31" />
 
             </div>
 
@@ -227,6 +225,9 @@
             
             </div>
         </div>
+
+        <?php include 'footer.php'; ?>
+        
     </body>
 </html>
             

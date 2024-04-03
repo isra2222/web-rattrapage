@@ -44,13 +44,11 @@
 			        <div id="conteneur_label_input">
 			            <label for="username">Nom d'utilisateur :</label>
 			            <input type="text" name="nom_utilisateur" id="username" placeholder="Nom d'utilisateur">
-			            <!-- Ajoutez l'attribut name pour le champ de saisie du nom d'utilisateur -->
 			            <label for="password">Mot de passe :</label>
 			            <input type="password" name="mot_de_passe" id="password" placeholder="Mot de passe">
-			            <!-- Ajoutez l'attribut name pour le champ de saisie du mot de passe -->
 			        </div>
 			        <div id="conteneur_btn_mdp">
-			            <a class="mdp" href="#">Mot de passe oublié</a>
+			            <a class="mdp" href="#"><li>Mot de passe oublié</li></a>
 			        </div>
 			        <div id="conteneur_bouton">
 			            <button type="submit" id="btn_connexion">Se connecter</button>
@@ -60,9 +58,7 @@
         </div>
     </div>
 
-    <footer id="footer">
-        <nav>&copy;2024 | Tinkièt' | Tous droits réservés</nav>
-    </footer>
+    <?php include 'footer.php'; ?>
 
 </body>
 </html>
