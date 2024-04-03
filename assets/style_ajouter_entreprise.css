@@ -95,3 +95,20 @@ footer{
     padding: 10px;
     width: 200px;
 }
+
+.dates {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 50px;
+}
