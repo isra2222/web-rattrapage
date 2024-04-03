@@ -3,18 +3,6 @@
 	width: 5%;
 }
 
-footer{
-    text-align: center;
-    background-color: white;
-    color: #004aad;
-    font-weight: bold;
-    margin-top: 8.2vh;
-    margin-left: -8px;
-    margin-right: -8px;  
-    margin-bottom: -8px;
-    padding: 5px;
-}
-
 .bandeau{
 	background-color: white;
     padding: 10px;
@@ -84,4 +72,16 @@ body{
 
 .conteneur_label_input{
 	margin-bottom: 30px;
+}
+
+footer
+{
+    text-align: center;
+    background-color: white;
+    color: #004aad;
+    font-weight: bold;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    padding: 5px;
 }
