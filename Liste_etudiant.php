@@ -60,7 +60,7 @@
 		require 'connexion_bdd/creation_connexion.php';
 
 		$page = isset($_GET['page']) ? $_GET['page'] : 1;
-		$studentsPerPage = 2; // Nombre d'étudiants par page
+		$studentsPerPage = 3; // Nombre d'étudiants par page
 
 		$sql = "SELECT pseudo, motDePasse FROM utilisateurs";
 		$result = $dbh->query($sql);
@@ -127,7 +127,7 @@
             paginationContainer.appendChild(button);
         }
     }
-        showPagination();
+showPagination();
 </script>
 
 </html>
