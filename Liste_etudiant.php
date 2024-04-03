@@ -34,7 +34,7 @@
 		        <a class="menu-liens"><img src="Image/profil.png"></a>
 		        <div class="dropdown">
 					<a href="Profil.html">Mon profil</a>
-		            <a href="#">Mes avis</a>
+		            <a href="Avis.php">Mes avis</a>
 		            <a href="#">Wish List</a>
 		            <a href="Connexion.html">Déconnexion</a>
 		        </div>
