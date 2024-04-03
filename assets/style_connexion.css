@@ -42,7 +42,7 @@ body{
 }
 
 .slide-wrapper {
-display: flex;
+	display: flex;
 	transition: transform 1s ease; 
 }
 
@@ -83,7 +83,7 @@ display: flex;
 	text-shadow: 10px 5px 3px darkblue;
 	text-align: center;
 	text-decoration: bold;
-	font-size: 25px;s
+	font-size: 25px;
 }
 
 
@@ -95,7 +95,7 @@ display: flex;
 
 #conteneur_label_input input{
 	box-shadow: 0.65vw 0.71vh 2.84vh darkblue;
-	border: 0px;
+	border: 1px solid #ccc;
 	border-radius: 1vh;
 	padding: 5px;
 	margin-top: 10px;
@@ -133,7 +133,6 @@ display: flex;
 	margin: 10px;
 	width: 20vw;
 	border: 0px;
-
 }
 
 
