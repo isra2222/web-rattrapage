@@ -1,7 +1,7 @@
 body{
     color: rgb(255, 255, 255);
     font-family: Arial;
-    background: linear-gradient(darkblue, #004aad);
+    background: linear-gradient(#00008b, #004aad);
 }
 
 #logo{
