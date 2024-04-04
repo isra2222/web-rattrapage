@@ -10,9 +10,7 @@
 
     <body>
         <header>
-            <nav class="bandeau">
-                <img src="Image/logo.png" id="logo">
-            </nav>
+            <?php include "header.php"; ?>
         </header>
 
         <div id="tableau">
@@ -90,9 +88,5 @@
 
         </div>
         </div>
-        <footer>
-
-            <nav>&copy;2024 | Tinkièt' | Tous droits réservés</nav>
-
-        </footer>
+        <?php include "footer.php"; ?>
     </body>

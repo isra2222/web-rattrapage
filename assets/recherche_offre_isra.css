@@ -1,17 +1,5 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html, body {
-    height: 100%;
-  }
-  
-  head {
-    background-color: white;
-  }
-  
+ 
+
   
   #title {
     padding-right: 1em;
@@ -61,19 +49,6 @@
     background-color: #0056b3; 
   }
   
-  .header {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-  
-    font-size: larger;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width : 100%;
-    background-color: white;
-  }
-  
   .logo {
     height: 50px; 
   }
@@ -99,18 +74,6 @@
     padding: 100px 50px 50px;
     flex-grow: 1;
     justify-content: center;
-  }
-  
-  footer{
-    text-align: center;
-    background-color: white;
-    color: #004aad;
-    font-weight: bold;
-    margin-top: 30.9vh;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-bottom: -8px;
-    padding: 5px;
   }
   
   .options {

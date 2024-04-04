@@ -5,17 +5,11 @@
         <meta name="viewport" content="width=device-width"/>
         <title>Tinkièt'</title>
         <link rel="shortcut icon" href="Image/logo.png"/>
-  <link rel="stylesheet" href="assets/recherche_pilote_isra.css">
+  <link rel="stylesheet" href="assets/recherche_offre_isra.css">
 </head>
 <body>
-  <header class="header">
-    <img src="photo.png" alt="photo" class="photo">
-    <input type="search" placeholder="Rechercher..." class="search-bar">
-    <div class="icons">
-      <a href="lien1.html"><img src="photo.png" alt="Image 1" class="clickable-image"></a>
-      <a href="lien2.html"><img src="photo.png" alt="Image 2" class="clickable-image"></a>
-      <a href="lien3.html"><img src="photo.png" alt="Image 3" class="clickable-image"></a>
-    </div>
+  <header>
+    <?php include "header.php"; ?>
   </header>
 <div class="content">
   
@@ -29,48 +23,43 @@
         </div>
         <div class="container">
     <div class="grid">
-      <img src="th.jpg" alt="photo 1" class="photo">
-      <h2>Nom_Prenom</h2>
-      <h3>telephone</h3>
-      <div class="test">ui
+      <img src="th.jpg" alt="Logo 1" class="logo">
+      <h2>Engie</h2>
+      <div class="test">
         <button class="btn" id="moreBtn">...</button>
         <div class="dropdown" id="dropdown">
             <button onclick="modifier()">Modifier</button>
             <button onclick="supprimer()">Supprimer</button>
+            <button onclick="statistiques()">Statistiques</button>
         </div>
     </div>
     </div>
     <div class="grid">
-      <img src="th.jpg" alt="photo 2" class="photo">
-      <h2>Nom_Prenom</h2>
-      <h3>telephone</h3>
+      <img src="th.jpg" alt="Logo 2" class="logo">
+      <h2>Engie</h2>
       <button class="btn">...</button>
     </div>
     <div class="grid">
-      <img src="th.jpg" alt="photo 3" class="photo">
-      <h2>Nom_Prenom</h2>
-      <h3>telephone</h3>
-      <button class="btn">...</button>
-    </div>
-
-    <div class="grid">
-      <img src="th.jpg" alt="photo 2" class="photo">
-      <h2>Nom_Prenom</h2>
-      <h3>telephone</h3>
+      <img src="th.jpg" alt="Logo 3" class="logo">
+      <h2>Engie</h2>
       <button class="btn">...</button>
     </div>
 
     <div class="grid">
-      <img src="th.jpg" alt="photo 2" class="photo">
-      <h2>Nom_Prenom</h2>
-      <h3>telephone</h3>
+      <img src="th.jpg" alt="Logo 2" class="logo">
+      <h2>Engie</h2>
       <button class="btn">...</button>
     </div>
 
     <div class="grid">
-      <img src="th.jpg" alt="photo 4" class="photo">
-      <h2>Nom_Prenom</h2>
-      <h3>telephone</h3>
+      <img src="th.jpg" alt="Logo 2" class="logo">
+      <h2>Engie</h2>
+      <button class="btn">...</button>
+    </div>
+
+    <div class="grid">
+      <img src="th.jpg" alt="Logo 4" class="logo">
+      <h2>Engie</h2>
       <button class="btn">...</button>
     </div>
   </div>              
@@ -78,31 +67,9 @@
 </div>
 </div>
   </div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker
-            .register('/sw.js')
-            .then(registration => {
-              console.log(
-                `Service Worker enregistré ! Ressource: ${registration.scope}`
-              );
-            })
-            .catch(err => {
-              console.log(
-                `Echec de l'enregistrement du Service Worker: ${err}`
-              );
-            });
-        });
-      }
-    </script>
-
+  <?php include "footer.php"; ?>
 </body>
-<footer>
 
-  <nav>&copy;2024 | Tinkièt' | Tous droits réservés</nav>
-
-</footer>
 </html>
 
 <script>

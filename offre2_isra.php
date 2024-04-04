@@ -8,15 +8,9 @@
   <link rel="stylesheet" href="assets/offre2_isra.css">
 </head>
 <body>
-  <header class="header">
-    <img src="logo.png" alt="Logo" class="logo">
-    <input type="search" placeholder="Rechercher..." class="search-bar">
-    <div class="icons">
-      <a href="lien1.html"><img src="logo.png" alt="Image 1" class="clickable-image"></a>
-      <a href="lien2.html"><img src="logo.png" alt="Image 2" class="clickable-image"></a>
-      <a href="lien3.html"><img src="logo.png" alt="Image 3" class="clickable-image"></a>
-    </div>
-  </header>
+  <header>
+    <?php include "header.php"; ?>
+</header>
 <div class="content">
   
     <div class="testF">
@@ -74,11 +68,7 @@
 </div>
   </div>
 </body>
-<footer>
-
-  <nav>&copy;2024 | Tinkièt' | Tous droits réservés</nav>
-
-</footer>
+<?php include "footer.php"; ?>
 </html>
 
 <script>

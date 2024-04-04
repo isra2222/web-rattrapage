@@ -5,35 +5,11 @@
         <meta name="viewport" content="width=device-width"/>
         <title>Tinkièt'</title>
         <link rel="shortcut icon" href="Image/logo.png"/>
-  <link rel="stylesheet" href="pilote_isra.css">
+  <link rel="stylesheet" href="assets/recherche_pilote_isra.css">
 </head>
 <body>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker
-          .register('/sw.js')
-          .then(registration => {
-            console.log(
-              `Service Worker enregistré ! Ressource: ${registration.scope}`
-            );
-          })
-          .catch(err => {
-            console.log(
-              `Echec de l'enregistrement du Service Worker: ${err}`
-            );
-          });
-      });
-    }
-  </script>
-  <header class="header">
-    <img src="photo.png" alt="photo" class="photo">
-    <input type="search" placeholder="Rechercher..." class="search-bar">
-    <div class="icons">
-      <a href="lien1.html"><img src="photo.png" alt="Image 1" class="clickable-image"></a>
-      <a href="lien2.html"><img src="photo.png" alt="Image 2" class="clickable-image"></a>
-      <a href="lien3.html"><img src="photo.png" alt="Image 3" class="clickable-image"></a>
-    </div>
+  <header>
+    <?php include "header.php"; ?>
   </header>
 <div class="content">
   
@@ -50,7 +26,7 @@
       <img src="th.jpg" alt="photo 1" class="photo">
       <h2>Nom_Prenom</h2>
       <h3>telephone</h3>
-      <div class="test">
+      <div class="test">ui
         <button class="btn" id="moreBtn">...</button>
         <div class="dropdown" id="dropdown">
             <button onclick="modifier()">Modifier</button>
@@ -96,12 +72,27 @@
 </div>
 </div>
   </div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/sw.js')
+            .then(registration => {
+              console.log(
+                `Service Worker enregistré ! Ressource: ${registration.scope}`
+              );
+            })
+            .catch(err => {
+              console.log(
+                `Echec de l'enregistrement du Service Worker: ${err}`
+              );
+            });
+        });
+      }
+    </script>
+
 </body>
-<footer>
-
-  <nav>&copy;2024 | Tinkièt' | Tous droits réservés</nav>
-
-</footer>
+<?php include "footer.php"; ?>
 </html>
 
 <script>
