@@ -4,32 +4,6 @@ body{
     background: linear-gradient(darkblue, #004aad);
 }
 
-#logo{
-    height: 5%;
-    width: 5%;
-}
-
-footer{
-    text-align: center;
-    background-color: white;
-    color: #004aad;
-    font-weight: bold;
-    margin-top: 30.9vh;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-bottom: -8px;
-    padding: 5px;
-}
-
-.bandeau{
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: -10px;
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
 #tableau{
     margin: 0 auto;
     border: 2px solid #ffffff;

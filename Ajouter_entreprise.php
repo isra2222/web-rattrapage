@@ -5,24 +5,24 @@
         <meta name="viewport" content="width=device-width"/>
         <title>Tinkièt'</title>
         <link rel="shortcut icon" href="Image/logo.png"/>
-        <link rel="stylesheet" href="assets/style_modifier_entreprise.css">
+        <link rel="stylesheet" href="assets/style_ajouter_entreprise.css">
     </head>
     <body>
         <header>
-            <nav class="bandeau">
-                <img src="Image/logo.png" id="logo">
-            </nav>
+            
+        <?php include 'header.php'; ?>
+
         </header>
 
         <div id="tableau">
 
             <span id="titre">
-                Modifier une entreprise
+                Ajouter une entreprise
             </span>
 
             <div id="renseignement">
-                <input type="text" id="uname" name="nom" placeholder="Nom de l'entreprise" size="50"/>
-                <input type="text" id="ad" name="adresse" placeholder="Adresse du Siège" size="50"/>
+                <input type="text" id="uname" name="nom" placeholder="Nom de l'entreprise*" size="50"/>
+                <input type="text" id="ad" name="adresse" placeholder="Adresse du Siège*" size="50"/>
                 <select id="pays" onchange="populateCities()">
                     <option value="">Sélectionnez un pays</option>
                     <option value="Albanie">Albanie</option>
@@ -76,19 +76,22 @@
                 <select id="villes">
                     <option value="">Sélectionnez d'abord un pays</option>
                 </select>
-
                 <input type="text" id="act" name="secteuractivité" placeholder="Secteur d'activité*" size="50"/>
-
-                
-
-            
-
+                <input 
+                                type="number"
+                                id="siret" 
+                                name="siret" 
+                                pattern="[0-9]{3} [0-9]{3} [0-9]{3} [0-9]{5}" 
+                                required minlengh="14" maxlengh="14" 
+                                size="50"
+                                placeholder="Numéro de SIRET*"/>
+            <span id="champs">
+            * : Champs obligatoires
+            </span>
             <div id="finir">
-
                 <button id="bouton">
-                    Modifier une entreprise
+                    Ajouter une entreprise
                 </button>
-
             </div>
 
 
@@ -96,7 +99,8 @@
 
         
 
-    
+
+
 
 
 
@@ -176,10 +180,7 @@
                             }
                         </script>
         </div>
-        <footer>
 
-            <nav>&copy;2024 | Tinkièt' | Tous droits réservés</nav>
+        <?php include 'footer.php'; ?>
 
-        </footer>
     </body>
-</html>

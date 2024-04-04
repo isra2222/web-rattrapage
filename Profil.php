@@ -11,35 +11,7 @@
 <body>
 	<header>
 
-	    <img id="logo" src="Image/logo.png" alt="Logo">
-
-	    <div class="liens">
-		    <div class="lien-container">
-		        <a class="menu-liens"><img src="Image/contact.png"></a>
-		        <div class="dropdown">
-					<a href="#">Option 7</a>
-		            <a href="#">Option 8</a>
-		            <a href="#">Option 9</a>
-		        </div>
-		    </div>
-		    <div class="lien-container">
-		        <a class="menu-liens"><img src="Image/notif.png"></a>
-		        <div class="dropdown">
-		            <a href="#">Option 4</a>
-		            <a href="#">Option 5</a>
-		            <a href="#">Option 6</a>
-		        </div>
-		    </div>
-		    <div class="lien-container">
-		        <a class="menu-liens"><img src="Image/profil.png"></a>
-		        <div class="dropdown">
-					<a href="Profil.html">Mon profil</a>
-		            <a href="#">Mes avis</a>
-		            <a href="#">Wish List</a>
-		            <a href="Connexion.html">Déconnexion</a>
-		        </div>
-		    </div>
-		</div>
+	    <?php include 'header.php'; ?>
 	    
 	</header>
 
@@ -49,7 +21,15 @@
 			<img src="Image/pascontent.png" alt="Image" class="zoomed-image" id="zoomedImage">
 			<img src="Image/pascontent.png" alt="Image" class="profil-pic" id="profilPic">
 	        <div class="info">
-	            <label class="h2">Nom</label>
+	            <label class="h2">
+	            	<?php
+						session_start();
+						if(isset($_SESSION['nom_utilisateur'])) {
+						    $prenom = $_SESSION['nom_utilisateur'];
+						    echo $prenom;
+						}
+					?>
+	            </label>
 	            <label class="h2">Prénom</label>
 	            <p>Adresse mail</p>
 	            <p>Adresse</p>
@@ -73,8 +53,6 @@
     	</div>
     </div>
 
-	<footer>
-		<nav>&copy;2024 | Tinkièt' | Tous droits réservés</nav>
-	</footer>
+	<?php include 'footer.php'; ?>
 </body>
 </html>
