@@ -31,7 +31,7 @@ window.onload = () => {
             let previousStar = this.previousElementSibling;
 
             while(previousStar){
-                // On passe l'étoile qui précède en rouge
+                // On passe l'étoile qui précède en jaune
                 previousStar.style.color = "#FCDC12";
                 previousStar.classList.add("las");
                 previousStar.classList.remove("lar");

@@ -13,5 +13,5 @@ function rechercher()
 
 // Fonction pour afficher les étudiants de la page donnée
 function showStudents(page) {
-    window.location.href = "quoicoubeh.php?page=" + page;
+    window.location.href = "Liste_etudiant.php?page=" + page;
 }
