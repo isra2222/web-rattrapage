@@ -40,7 +40,7 @@
 			<div class="fond">
 				<label>Renseigne toi sur des entreprises pour tes lettres de motivation ou ton entretien</label>
 			</div>
-			<button><span>Débute</span><span class="label_recherche">Tes renseignements</span></button>
+			<button id="boutonRedirection"><span>Débute</span><span class="label_recherche">Tes renseignements</span></button>
 			<div>
 				<div class="carre" id="rotated-div1.1"></div>
 				<div class="carre" id="rotated-div2.1"></div>

@@ -1,6 +1,6 @@
 <?php
 	$host = 'localhost';
-	$dbname = 'workshop7';
+	$dbname = 'groupe a bdd';
 	$username = 'root';
 	$password = '';
 ?>

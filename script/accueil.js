@@ -84,3 +84,8 @@ rotatedDiv15.style.top = `${getRandomPosition()}%`;
 rotatedDiv16.style.transform = `rotate(${getRandomAngle()}deg)`;
 rotatedDiv16.style.left = `${getRandomPosition()}%`;
 rotatedDiv16.style.top = `${getRandomPosition()}%`;
+
+var bouton = document.getElementById('boutonRedirection');
+bouton.addEventListener('click', function() {
+    window.location.href = 'Rechercher_entreprise.php';
+});

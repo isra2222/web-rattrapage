@@ -1,7 +1,7 @@
 body{
     color: rgb(255, 255, 255);
     font-family: Arial;
-    background: linear-gradient(#00008b, #004aad);
+    background: #004aad;
 }
 
 #tableau{
@@ -12,6 +12,7 @@ body{
     margin-top: 70px;
     padding: 10px;
     width: 500px;
+    margin-bottom: 20px;
 }
 
 #renseignement input{
@@ -54,7 +55,8 @@ body{
 }
 
 #bouton{
-    font-size: 20px;
+    font-size: 15px;
+    width: 217px;
     border: 0;
     border-radius: 20px;
     padding: 10px;

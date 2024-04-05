@@ -86,8 +86,8 @@
 			    echo '<div class="container">';
 			    echo '<div class="profile">';
 			    echo '<div class="info">';
-			    echo '<h2>' . $colonne['Stage.intitule'] . '</h2>';
-			    echo '<p>Compétences : '. $colonne['Competences.id_competence'] . '</p>';
+			    echo '<h2>' . $colonne['intitule'] . '</h2>';
+			    echo '<p>Compétences : '. $colonne['id_competence'] . '</p>';
 			    echo '</div></div></div>';
 
 			    $index++;
@@ -112,7 +112,7 @@
 			    echo '<div class="container">';
 			    echo '<div class="profile">';
 			    echo '<div class="info">';
-			    echo '<h2>' . $colonne['Stage.intitule'] . '</h2>';
+			    echo '<h2>' . $colonne['intitule'] . '</h2>';
 			    echo '<p>Nombre d\'enregistrements : '. $colonne['nombre_interactions'] . '</p>';
 			    echo '</div></div></div>';
 
@@ -137,8 +137,8 @@
 			    echo '<div class="container">';
 			    echo '<div class="profile">';
 			    echo '<div class="info">';
-			    echo '<h2>' . $colonne['Stage.intitule'] . '</h2>';
-			    echo '<p>Dans le secteur de : '. $colonne['Ville.nom_ville'] . '</p>';
+			    echo '<h2>' . $colonne['intitule'] . '</h2>';
+			    echo '<p>Dans le secteur de : '. $colonne['nom_ville'] . '</p>';
 			    echo '</div></div></div>';
 
 			    $index++;
@@ -162,8 +162,8 @@
 			    echo '<div class="container">';
 			    echo '<div class="profile">';
 			    echo '<div class="info">';
-			    echo '<h2>' . $colonne['Stage.intitule'] . '</h2>';
-			    echo '<p>Pour la promotion : '. $colonne['Promotion.nom_promotion'] . '</p>';
+			    echo '<h2>' . $colonne['intitule'] . '</h2>';
+			    echo '<p>Pour la promotion : '. $colonne['nom_promotion'] . '</p>';
 			    echo '</div></div></div>';
 
 			    $index++;
@@ -187,8 +187,8 @@
 			    echo '<div class="container">';
 			    echo '<div class="profile">';
 			    echo '<div class="info">';
-			    echo '<h2>' . $colonne['Stage.intitule'] . '</h2>';
-			    echo '<p>Durée du stage : '. $colonne['Stage.duree_stage'] . '</p>';
+			    echo '<h2>' . $colonne['intitule'] . '</h2>';
+			    echo '<p>Durée du stage : '. $colonne['duree_stage'] . '</p>';
 			    echo '</div></div></div>';
 
 			    $index++;
@@ -212,8 +212,8 @@
 			    echo '<div class="container">';
 			    echo '<div class="profile">';
 			    echo '<div class="info">';
-			    echo '<h2>' . $colonne['Entreprise.nom_entreprise'] . '</h2>';
-			    echo '<p>Secteur d\'activité : '. $colonne['Secteurs_activites.nom_secteur'] . '</p>';
+			    echo '<h2>' . $colonne['nom_entreprise'] . '</h2>';
+			    echo '<p>Secteur d\'activité : '. $colonne['nom_secteur'] . '</p>';
 			    echo '</div></div></div>';
 
 			    $index++;
@@ -238,8 +238,8 @@
 			    echo '<div class="container">';
 			    echo '<div class="profile">';
 			    echo '<div class="info">';
-			    echo '<h2>' . $colonne['Entreprise.nom_entreprise'] . '</h2>';
-			    echo '<p>Entreprise dans le ville de : '. $colonne['Ville.nom_ville'] . '</p>';
+			    echo '<h2>' . $colonne['nom_entreprise'] . '</h2>';
+			    echo '<p>Entreprise dans le ville de : '. $colonne['nom_ville'] . '</p>';
 			    echo '</div></div></div>';
 
 			    $index++;

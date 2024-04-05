@@ -1,5 +1,5 @@
 <?php
-	require 'connexion_bdd/identifiant.php';
+	require 'identifiant.php';
 
 	try {
 	    $dbh = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

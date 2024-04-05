@@ -38,7 +38,7 @@
             <span id="message">
                 Trouver un stage en toute sérénité avec Tinkièt' !
             </span>
-            <form id="form_connexion" action="authentification.php" method="post">
+            <form id="form_connexion" action="requete/authentification.php" method="post">
 			    <fieldset id="connexion">
 			        <legend id="bienvenue">Bienvenue sur Tinkièt' !</legend>
 			        <div id="conteneur_label_input">
